@@ -123,7 +123,10 @@ module.exports = {
         'slide-out-left5': 'slide-out-left 0.7s ease-out',
       },
       backgroundImage : {
-        'home' : "url('penn-air-bg.webp')",
+        'home' : "url('penn-jet-header.webp')",
+        'home-phone' : "url('penn-jet-header-phone.webp')",
+        'hangar' : "url('penn-jet-header-heritage-field-hangar.webp')",
+        'jet' : "url('penn-jet-jet-bg.webp')",
       },
       height: theme => ({
         'screen-1/2': '50vh',

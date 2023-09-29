@@ -1,21 +1,26 @@
-<nav class="sticky top-0 z-50 h-16 lg:h-28 flex flex-row justify-between items-center bg-black text-white drop-shadow-2xl transform-gpu">
-  <div class="pl-5 lg:pl-3 lg:pt-2 z-50">
+<nav class="sticky top-0 z-50 h-16 lg:h-20 flex flex-row justify-center lg:justify-between items-center bg-slate-100 text-blue-900 drop-shadow-2xl transform-gpu">
+  <div class="pl-0 lg:pl-3 z-50">
     <%= link_to root_path, data: { turbo: false } do %>
-      <%= image_tag "pitcairn-aviation-white-logo.webp", alt: "Sun City Aviation Academy Logo", class: "w-48 top-0"%>
+      <%= image_tag "penn-jet-logo-500.webp", alt: "Penn Jet Logo", class: "w-48 top-0"%>
     <% end %>
   </div>
 
   <!--Button-->
-  <div class="mr-3 justify-end items-center gap-10 font-thin text-xl lg:flex hidden">
-    <%= link_to "SERVICES"%>
-    <%= link_to "PILOT INFORMATION"%>
-    <%= link_to "NEWS AND EVENTS"%>
-    <%= link_to "ABOUT"%>
-    <button class="btn-primary lg:block hidden">
+  <div class="mr-3 justify-end items-center gap-10 lg:flex hidden">
+    <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('home', 0);">HOME</button>
+    <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('about', 30);">ABOUT</button>
+    <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('management', 60);">AIRCRAFT MANAGEMENT</button>
+    <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('charter', 30);">PRIVATE CHARTER</button>
+    
+    <%#= link_to "HOME"%>
+    <%#= link_to "ABOUT"%>
+    <%#= link_to "AIRCRAFT MANAGEMENT"%>
+    <%#= link_to "PRIVATE CHARTER"%>
+    <button class="btn-primary lg:block hidden" onclick="scrollToElement('contact', 30);">
       CONTACT US
     </button>
   </div>
-  <div class="lg:hidden mr-2 " x-data="{ open: false }">
-    <%= render "shared/header_nav_mobile_menu"%>
-  </div>
+  <!--<div class="lg:hidden mr-2 " x-data="{ open: false }">
+    <%#= render "shared/header_nav_mobile_menu"%>
+  </div>-->
 </nav>

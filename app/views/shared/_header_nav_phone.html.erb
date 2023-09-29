@@ -1,17 +1,21 @@
-<nav class="flex flex-row justify-center lg:justify-between items-center bg-neutral-800 font-thin text-neutral-100 py-1 px-6">
+<nav class="flex flex-row justify-center lg:justify-end items-center bg-yellow-500 text-yellow-900 py-1 px-6" id="home">
   <div class="flex-row gap-8 hidden lg:flex" >
-    <%= link_to "Pitcairn Flight Academy", "https://pitcairnflightacademy.com", class: ""%>
-    <%= link_to "Penn Air Repair", "#", class: ""%>
-    <%= link_to "Penn Jet", "#", class: ""%>
-    <%= link_to "Heritage Field Airport", "http://heritagefield.org/", class: ""%>
-    
+    <div class="flex">
+      info@pennjet.com
+    </div>
+    <div class="flex">
+      (610) 495-7000
+    </div>
   </div>
-  <div class="text-2xl font-thin">
-    <%= link_to "(610) 495-7000", "tel:(610) 495-7000" %>
+
+  <div class="lg:hidden">
+    <p class="font-semibold">
+    (610) 495-7000
+    </p>
   </div>
 
   <%# BACKLINK AREA #%>
   <div class="text-neutral-900 text-xs absolute z-0 overflow-hidden -left-[100rem]">
-    <%= link_to "Pitcairn Aviation Website Designed and Developed by Right Rudder Marketing", "https://rightruddermarketing.com"%>
+    <%= link_to "Penn Jet Website Designed and Developed by Right Rudder Marketing", "https://rightruddermarketing.com"%>
   </div>
 </nav>

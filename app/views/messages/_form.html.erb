@@ -13,24 +13,24 @@
 
   <div class="my-5">
     <%= form.label :name, class: "" %>
-    <%= form.text_field :name, class: "block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-neutral-400 focus:ring-neutral-400" %>
+    <%= form.text_field :name, class: "block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-yellow-500 focus:ring-yellow-500" %>
   </div>
 
   <div class="my-5">
     <%= form.label :email, class: "" %>
-    <%= form.email_field :email, class: "block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-neutral-400 focus:ring-neutral-400" %>
+    <%= form.email_field :email, class: "block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-yellow-500 focus:ring-yellow-500" %>
   </div>
 
   <%= invisible_captcha :confirm_email, :message %>
 
   <div class="my-5">
     <%= form.label :phone, class: "" %>
-    <%= form.text_field :phone, placeholder: "###-###-####", class: "placeholder:text-slate-300 block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-neutral-400 focus:ring-neutral-400" %>
+    <%= form.text_field :phone, placeholder: "###-###-####", class: "placeholder:text-slate-300 block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-yellow-500 focus:ring-yellow-500" %>
   </div>
 
   <div class="my-5">
     <%= form.label "How can we help?", class: "" %>
-    <%= form.text_area :body, rows: 4, class: "block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-neutral-400 focus:ring-neutral-400" %>
+    <%= form.text_area :body, rows: 4, class: "block shadow rounded-md border border-slate-200 outline-none px-3 py-2 mt-2 w-full focus:border-yellow-500 focus:ring-yellow-500" %>
   </div>
 
   <%# if @show_checkbox_recaptcha %>
