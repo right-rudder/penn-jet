@@ -50,7 +50,7 @@
 
     <%####### UPDATE TITLE/DESC/KEYWORDS%>
     <meta name="title" content="<%= if content_for?(:title) then yield(:title) else 'Penn Jet - Your Trusted Aircraft Management Company (KPTW)' end %>">
-    <meta name="description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'We recognize that owning an aircraft is a substantial investment with significant responsibilities. When you choose Penn Jet to assist in the management of your aircraft, you access a comprehensive suite of services centered around Safety, Service, and Savings. Our commitment to overseeing your aviation assets enables you to fully enjoy the advantages of your investment. Unlock flexibility, convenience, and reliability with Penn Jet aircraft management services.' end %>">
+    <meta name="description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'When you choose Penn Jet to support the operation of your aircraft, you get a full range of services focused on safety, service and support.' end %>">
     <meta name="keywords" content="<%= if content_for?(:meta_keywords) then yield(:meta_keywords) else 'Aircraft Management Pottstown, Private Jet Services KPTW, Aviation Asset Management Pottstown, Aircraft Maintenance Pottstown, Aircraft Storage Pottstown, Aircraft Charter Services Pottstown, Aircraft Operations KPTW, Pottstown Municipal Airport Services, Aircraft Management Pennsylvania, Aircraft Services Montgomery County, Corporate Jet Management Pottstown, Aircraft Safety Inspections Pottstown, Aircraft Investment Management Pottstown, Aircraft Service Provider Pottstown, Pottstown Aviation Solutions, Aircraft Fleet Management KPTW, Aircraft Operations Montgomery County, Aircraft Storage Services Pennsylvania, Private Aircraft Management Pottstown, Aircraft Maintenance Montgomery County, Philadelphia Aircraft Management, Reading Aviation Services, King of Prussia Private Jets, Norristown Aircraft Operations, Chester County Aircraft Management, Allentown Aviation Solutions, Lancaster Private Jet Services, Berks County Aircraft Services, Bethlehem Aircraft Management, Lehigh Valley Aircraft Services.' end %>">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -62,7 +62,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="<%= request.original_url %>">
     <meta property="og:title" content="<%= if content_for?(:title) then yield(:title) else 'Penn Jet - Your Trusted Aircraft Management Company (KPTW)' end %>">
-    <meta property="og:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'We recognize that owning an aircraft is a substantial investment with significant responsibilities. When you choose Penn Jet to assist in the management of your aircraft, you access a comprehensive suite of services centered around Safety, Service, and Savings. Our commitment to overseeing your aviation assets enables you to fully enjoy the advantages of your investment. Unlock flexibility, convenience, and reliability with Penn Jet aircraft management services.' end %>">
+    <meta property="og:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'When you choose Penn Jet to support the operation of your aircraft, you get a full range of services focused on safety, service and support.' end %>">
     <meta property="og:image" content="<%= if content_for?(:og_image) then yield(:og_image) else image_url('') end %>">
 
     <%###### UPDATE TITLE/DESC/IMAGE%>
@@ -70,7 +70,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="<%= request.original_url %>">
     <meta property="twitter:title" content="<%= if content_for?(:title) then yield(:title) else "Penn Jet - Your Trusted Aircraft Management Company (KPTW)" end %>">
-    <meta property="twitter:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'We recognize that owning an aircraft is a substantial investment with significant responsibilities. When you choose Penn Jet to assist in the management of your aircraft, you access a comprehensive suite of services centered around Safety, Service, and Savings. Our commitment to overseeing your aviation assets enables you to fully enjoy the advantages of your investment. Unlock flexibility, convenience, and reliability with Penn Jet aircraft management services.' end %>">
+    <meta property="twitter:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'When you choose Penn Jet to support the operation of your aircraft, you get a full range of services focused on safety, service and support.' end %>">
     <meta property="twitter:image" content="<%= if content_for?(:twitter_image) then yield(:twitter_image) else image_url('') end %>">
 
     <!--CSS-->
@@ -83,12 +83,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!--async FONTs-->
-    <link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap">
+    <!--<link rel="stylesheet"  media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap">-->
     <!-- no-JS fallback -->
-    <noscript>
+    <!--<noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap">
-    </noscript>
+    </noscript>-->
 
     <!--JS-->
     <%= javascript_importmap_tags %>
@@ -115,8 +115,7 @@
       <%= yield %>
     </main>
 
-<%
-=begin %>
+
 
     <%#### UPDATES COMPANY FOR CALLRAIL%>
     <!-- #### CALLRAIL SCRIPT
@@ -127,16 +126,14 @@
     <%# GOOGLE TAG ONLY SHOW DURING PRODUCTION ENVIRONMENT%>
     <% if Rails.env.production? %>
       <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDEKLRKQDD"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZWB6T5347"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-PDEKLRKQDD');
+        gtag('config', 'G-7ZWB6T5347');
       </script>
     <%end%>
-<%
-=end %>
   </body>
 </html>

@@ -1,7 +1,7 @@
 <nav class="sticky top-0 z-50 h-16 lg:h-20 flex flex-row justify-center lg:justify-between items-center bg-slate-100 text-blue-900 drop-shadow-2xl transform-gpu">
   <div class="pl-0 lg:pl-3 z-50">
     <%= link_to root_path, data: { turbo: false } do %>
-      <%= image_tag "penn-jet-logo-500.webp", alt: "Penn Jet Logo", class: "w-48 top-0"%>
+      <%= image_tag "pennjetllc.webp", alt: "Penn Jet Logo", class: "w-48 top-0"%>
     <% end %>
   </div>
 
@@ -9,8 +9,9 @@
   <div class="mr-3 justify-end items-center gap-10 lg:flex hidden">
     <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('home', 0);">HOME</button>
     <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('about', 30);">ABOUT</button>
-    <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('management', 60);">AIRCRAFT MANAGEMENT</button>
     <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('charter', 30);">PRIVATE CHARTER</button>
+    <button class="font-bold italic text-xl link-underline" onclick="scrollToElement('management', 60);">AIRCRAFT MANAGEMENT</button>
+    
     
     <%#= link_to "HOME"%>
     <%#= link_to "ABOUT"%>

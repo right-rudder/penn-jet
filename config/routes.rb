@@ -69,7 +69,7 @@ Rails.application.routes.draw do
   #get 'airline-pilot-courses', to: 'pages#airline_pilot_courses', as: :airline_pilot_courses
   #get 'pilot-programs', to: 'pages#pilot_programs', as: :programs
   #get 'our-team', to: 'pages#our_team', as: :our_team
-  #get 'terms-of-service-privacy-policy', to: 'pages#tos', as: :tos
+  get 'terms-of-service-privacy-policy', to: 'pages#tos', as: :tos
   #get 'aircraft-rental', to: 'pages#aircraft_rental', as: :aircraft_rental
   #get 'fixed-wing-airplane-fleet', to: 'pages#fixed_wing', as: :fixed_wing
   #get 'rotary-wing-helicopter-fleet', to: 'pages#rotary_wing', as: :rotary_wing
