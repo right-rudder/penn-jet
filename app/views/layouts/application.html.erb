@@ -60,7 +60,7 @@
     <meta property="og:url" content="<%= request.original_url %>">
     <meta property="og:title" content="<%= if content_for?(:title) then yield(:title) else 'PennJet - Your Trusted Aircraft Management Company (KPTW)' end %>">
     <meta property="og:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'When you choose PennJet to support the operation of your aircraft, you get a full range of services focused on safety, service and support.' end %>">
-    <meta property="og:image" content="<%= if content_for?(:og_image) then yield(:og_image) else image_url('') end %>">
+    <meta property="og:image" content="<%= if content_for?(:og_image) then yield(:og_image) else image_url('https://pennjet.net/penn-jet-og-image.png') end %>">
 
     <%###### UPDATE TITLE/DESC/IMAGE%>
     <!-- Twitter -->
@@ -68,7 +68,7 @@
     <meta property="twitter:url" content="<%= request.original_url %>">
     <meta property="twitter:title" content="<%= if content_for?(:title) then yield(:title) else "PennJet - Your Trusted Aircraft Management Company (KPTW)" end %>">
     <meta property="twitter:description" content="<%= if content_for?(:meta_description) then yield(:meta_description) else 'When you choose PennJet to support the operation of your aircraft, you get a full range of services focused on safety, service and support.' end %>">
-    <meta property="twitter:image" content="<%= if content_for?(:twitter_image) then yield(:twitter_image) else image_url('') end %>">
+    <meta property="twitter:image" content="<%= if content_for?(:twitter_image) then yield(:twitter_image) else image_url('https://pennjet.net/penn-jet-og-image.png') end %>">
 
     <!--CSS-->
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
@@ -86,6 +86,16 @@
     <!--<noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap">
     </noscript>-->
+
+    <% if Rails.env.production? %>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WC7W3NBM');</script>
+      <!-- End Google Tag Manager -->
+    <%end%>
 
     <!--JS-->
     <%= javascript_importmap_tags %>
@@ -131,6 +141,10 @@
 
         gtag('config', 'G-7ZWB6T5347');
       </script>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC7W3NBM"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
     <%end%>
   </body>
 </html>
