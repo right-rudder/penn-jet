@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "simpliflyco.com"
+SitemapGenerator::Sitemap.default_host = "pennjet.net"
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
@@ -26,33 +26,6 @@ SitemapGenerator::Sitemap.create do
   #   end
 
   #Static Pages
-  add '/stratus-finance'
-  add '/meritize'
-  add '/accelerated-pilot-training'
-  add '/flexible-pilot-training'
-  add '/why-simplifly'
-  add '/financing'
-  add '/pilot-training-pricing-calculator'
-  add '/approximate-pilot-training-costs'
-  add '/timeline-to-be-a-pilot'
-  add '/multi-engine-rating'
-  add '/commercial-pilot-training'
-  add '/instrument-rating'
-  add '/private-pilot-training'
-  add '/pilot-training'
-  add '/airline-pilot-courses'
-  add '/pilot-programs'
-  add '/our-team'
-
-  #Blog
-  add '/blog'
-
-  #Forms
-  add '/enroll-at-simplifly'
-  add '/contact'
-  add '/visit-simplifly'
-  add '/instruct-at-simplifly'
-  add '/discovery-flight'
-
+  add root_path, :changefreq => 'weekly'
 
 end
