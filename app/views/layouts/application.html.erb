@@ -131,19 +131,16 @@
 
     <%#### UPDATE COMPANY FOR GTAG 'CURRENT GTAG=PITCAIRN'  %>
     <%# GOOGLE TAG ONLY SHOW DURING PRODUCTION ENVIRONMENT%>
-    <% if Rails.env.production? %>
+    <% if Rails.env.production? %>      
       <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZWB6T5347"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-64NM30S9T6"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-7ZWB6T5347');
+        gtag('config', 'G-64NM30S9T6');
       </script>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC7W3NBM"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
     <%end%>
   </body>
